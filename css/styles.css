@@ -330,7 +330,7 @@ p {
   letter-spacing: 0.03em;
 }
 .social-networks {
-  color: var(--team-link-color);
+  fill: var(--team-link-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -338,9 +338,11 @@ p {
   width: 44px;
   border-radius: 50%;
 }
+/* .icon-social {
+  fill: var(--team-link-color); */
 .social-networks:hover,
 .social-networks:focus {
-  color: var(--accent-text);
+  fill: var(--accent-text);
 }
 .social-list {
   display: flex;
@@ -350,15 +352,29 @@ p {
 }
 .img-social:hover {
   background-color: var(--accent-text);
+  --color1: var(--primary-white-color);
 }
 /*Постоянные клиенты*/
 .clients:not(:last-child) {
   width: calc((100% - 30px) / 6);
   margin-right: 30px;
 }
-.img-client:hover {
-  background-color: var(--accent-text);
+.item-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: #afb1b8;
 }
+.item-logo:hover,
+.item-logo:focus {
+  fill: var(--accent-text);
+}
+
 /*footer*/
 .footer {
   color: var(--primary-white-color);
