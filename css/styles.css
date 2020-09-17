@@ -338,21 +338,17 @@ p {
   width: 44px;
   border-radius: 50%;
 }
-/* .icon-social {
-  fill: var(--team-link-color); */
+
 .social-networks:hover,
 .social-networks:focus {
-  fill: var(--accent-text);
+  fill: var(--primary-white-color);
+  background-color: var(--accent-text);
 }
 .social-list {
   display: flex;
   justify-content: center;
   margin-bottom: 24px;
   margin-top: 16px;
-}
-.img-social:hover {
-  background-color: var(--accent-text);
-  --color1: var(--primary-white-color);
 }
 /*Постоянные клиенты*/
 .clients:not(:last-child) {
@@ -373,19 +369,21 @@ p {
 .item-logo:hover,
 .item-logo:focus {
   fill: var(--accent-text);
+  border-color: var(--accent-text);
 }
 
 /*footer*/
-.footer {
-  color: var(--primary-white-color);
-  background-color: var(--footer-bcg-color);
-
-  padding: 60px 0px;
+.footer-main {
+  background: #2f303a;
+  height: 252px;
+  padding: 60px;
 }
-.footer-list-social {
+/* .footer-list-social {
   display: flex;
   justify-content: center;
-}
+  margin-bottom: 24px;
+  margin-top: 16px;
+} */
 .container.footer {
   display: flex;
   justify-content: space-between;
@@ -393,8 +391,13 @@ p {
 }
 .logo.footer {
   color: var(--primary-white-color);
-
   padding: 0;
+
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-adress {
+  font-style: normal;
 }
 
 .address-text {
@@ -404,13 +407,31 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
 .address-text a {
   color: rgba(255, 255, 255, 0.6);
 }
-
+.adress {
+  color: var(--primary-white-color);
+  font-size: 14px;
+}
+.link-adress {
+  margin-top: 8px;
+}
 .address-text a:hover,
 .address-text a:focus {
   color: var(--accent-text);
+}
+.mail {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71x;
+  text-decoration: none;
+}
+.footer-header {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
 }
 
 b {
@@ -419,6 +440,10 @@ b {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.img-footer {
+  background: rgba(255, 255, 255, 0.1);
+  --color1: var(--primary-white-color);
 }
 
 /*Portfolio*/
