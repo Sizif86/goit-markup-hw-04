@@ -13,6 +13,9 @@ font-family: 'Roboto', sans-serif;*/
 html {
   box-sizing: border-box;
 }
+/* * {
+  outline: 1px solid teal;
+} */
 *,
 *::before,
 *::after {
@@ -46,6 +49,7 @@ a {
   margin-right: 30px;
   width: calc((100% - 30px * 3) / 4);
 }
+
 .about-us-list {
   display: flex;
 }
@@ -308,6 +312,12 @@ p {
   text-align: center;
   justify-content: space-between;
 }
+.team-service > .team-list {
+  background: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-list:not(:last-child) {
   width: calc((100% - 30px) / 4);
   margin-right: 30px;
@@ -433,7 +443,9 @@ p {
   color: var(--primary-white-color);
   margin-bottom: 20px;
 }
-
+.social-list .item-social + .item-social {
+  margin-left: 10px;
+}
 b {
   font-weight: 700;
   font-size: 14px;
