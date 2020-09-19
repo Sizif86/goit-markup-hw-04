@@ -228,11 +228,21 @@ p {
 }
 .icon {
   display: block;
-  margin-bottom: 55px;
+  /* margin-bottom: 55px; */
   margin-left: auto;
   margin-right: auto;
   width: 70px;
   height: 70px;
+}
+.background-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 .button-head {
   color: var(--primary-white-color);
@@ -481,7 +491,7 @@ b {
 }
 
 .button-second {
-  color: var(--title-text-color);
+  color: var(--text-title-color);
   background-color: #f5f4fa;
   border-radius: 4px;
   font-family: Roboto, sans-serif;
@@ -491,9 +501,11 @@ b {
   letter-spacing: 0.03em;
   padding: 6px 22px;
 }
+
 .button-second:hover,
 .button-second:focus {
   background-color: var(--accent-text);
+  color: white;
 }
 .card-hover {
   color: var(--primary-white-color);
@@ -503,18 +515,24 @@ b {
   letter-spacing: 0.03em;
 }
 .title-card {
+  margin-bottom: 4px;
   color: var(--text-title-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
 .title-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.87;
 }
 ul.list.button-list {
   justify-content: center;
@@ -530,7 +548,11 @@ ul.list.button-list {
 .element {
   width: 370px;
   margin: 15px;
+  padding: 20px;
 }
-.element-item:hover {
-  background-color: #2196f3;
+.element:hover {
+  background: var(--primary-white-color);
+  border: 1px solid #eeeeee;
+  width: 370px;
+  margin: 15px;
 }
